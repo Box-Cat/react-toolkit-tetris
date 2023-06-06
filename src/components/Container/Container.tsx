@@ -81,19 +81,15 @@ const Container = () => {
     if (!gameOver && !pause) {
       if (keyCode === 37) {
         if(sound===true) moveSound.current.play();
-        //else moveSound.current.pause();
         movePlayer(-1);
       } else if (keyCode === 39) {
         if(sound===true) moveSound.current.play();
-        //else moveSound.current.pause();
         movePlayer(1);
       } else if (keyCode === 40) {
         if(sound===true) moveSound.current.play();
-        //else moveSound.current.pause();
         dropPlayer();
       } else if (keyCode === 38) {
         if(sound===true) rotateSound.current.play();
-        //else rotateSound.current.pause();
         playerRotate(field);
       } else if (keyCode === 17) {
         //ctrl
@@ -238,7 +234,6 @@ const Container = () => {
 
   return (
     <>
-      {/* onKeyDown={move}에서 키보드 조종 ref={myFocus}로 focus */}
       <StyledGameBody role='button' tabIndex={0} onKeyDown={moveByKey} ref={myFocus} >
         <StyledScreenContainer>
           {pause ? <Modal message={'PAUSE'} /> : ""}

@@ -9,7 +9,6 @@ type Props = {
   top: string;
   left: string;
   content: string;
-  //onClick: ((keyCode: number) => void) | (() => void) | ((event: React.MouseEvent<HTMLButtonElement>) => void);
   onClick:() => void;
 }
 

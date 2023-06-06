@@ -16,7 +16,6 @@ export const useField = (player: PLAYER, resetPlayer: () => void) => {
         if (row.findIndex((cell) => cell[0] === 0) === -1) {
           setRowsCleared((prev) => prev + 1);
           // field 맨 앞에 빈 row 1줄 삽입
-          //newField[0].length : 12개
           ack.unshift(new Array(newField[0].length).fill([0, 'clear']) as DRAWFIELDCELL[]);
           return ack;
         }

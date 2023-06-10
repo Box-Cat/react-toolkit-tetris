@@ -2,3 +2,5 @@
 
 
 사용한 기술: Typescript, Redux Toolkit, Styled Components, Webpack
+
+responsive web design을 사용하여, PC에서는 키보드와 버튼 클릭으로, 핸드폰에서는 버튼 터치로 조종할 수 있게 설정함.
